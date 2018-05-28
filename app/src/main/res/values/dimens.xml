@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--padding and marin sizes-->
+    <dimen name="small_one">4dp</dimen>
+    <dimen name="small_two">8dp</dimen>
+    <dimen name="medium_one">16dp</dimen>
+    <dimen name="medium_two">24dp</dimen>
+    <dimen name="large_one">32dp</dimen>
+    <dimen name="large_two">36dp</dimen>
+
+    <!--Image sizing-->
+    <dimen name="image_height">100dp</dimen>
+
+    <!--Button dimensions-->
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">100dp</dimen>
+
+    <!--Category Titles-->
+    <dimen name="txt_width">80dp</dimen>
+
+    <!--text sizes-->
+    <dimen name="small_txt">14sp</dimen>
+    <dimen name="med_txt_one">18sp</dimen>
+    <dimen name="med_txt_two">22sp</dimen>
+    <dimen name="large_txt_one">26sp</dimen>
+    <dimen name="large_txt_two">32sp</dimen>
+    <dimen name="xlarge_txt_one">44sp</dimen>
+    <dimen name="xlarge_txt_two">60sp</dimen>
+</resources>

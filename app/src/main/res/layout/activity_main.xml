@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.futbolcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_two">
+
+        <!--App Title Text-->
+        <TextView
+            style="@style/TxtHeading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title" />
+
+        <!--Instructions-->
+        <TextView
+            style="@style/TxtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_instructions" />
+
+        <!--Enter team A name-->
+        <EditText
+            android:id="@+id/team_A_input"
+            style="@style/txtPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_team_a"
+            android:inputType="textCapWords" />
+
+        <!--Enter team B name-->
+        <EditText
+            android:id="@+id/team_B_input"
+            style="@style/txtPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_team_b"
+            android:inputType="textCapWords" />
+
+        <!--Enter button-->
+        <Button
+            android:id="@+id/submit_teams_button"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchActivityTwo"
+            android:text="@string/enter_button_text" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--Title text-->
+    <style name="TxtHeading1">
+        <item name="android:textSize">@dimen/xlarge_txt_one</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">@dimen/medium_one</item>
+        <item name="android:paddingHorizontal">@dimen/small_two</item>
+        <item name="android:layout_marginVertical">@dimen/medium_one</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--Score text-->
+    <style name="TxtScore">
+        <item name="android:textSize">@dimen/xlarge_txt_two</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">@dimen/medium_one</item>
+        <item name="android:paddingHorizontal">@dimen/small_two</item>
+        <item name="android:layout_marginVertical">@dimen/medium_one</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--Button Style-->
+    <style name="buttonStyle">
+        <item name="android:textSize">@dimen/medium_two</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingBottom">@dimen/small_two</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <!--Heading text-->
+    <style name="TxtHeading">
+        <item name="android:textSize">@dimen/large_txt_one</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">@dimen/small_two</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--Primary text style-->
+    <style name="txtPrimary">
+        <item name="android:textSize">@dimen/medium_two</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grayGreen</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingBottom">@dimen/small_one</item>
+        <item name="android:paddingLeft">@dimen/small_one</item>
+        <item name="android:paddingRight">@dimen/small_one</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

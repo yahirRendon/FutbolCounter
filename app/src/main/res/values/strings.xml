@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="team_a_summary"><xliff:g id="time" example="00:00">%1$s</xliff:g> Goal <xliff:g id="name" example="FC Barcelona">%2$s</xliff:g></string>
+    <string name="team_b_summary"><xliff:g id="time" example="00:00">%1$s</xliff:g> Goal <xliff:g id="name" example="Real Madrid CF">%2$s</xliff:g></string>
+    <string name="app_name">Futbol Counter</string>
+    <string name="app_title">Soccer Statistics</string>
+    <string name="enter_instructions">Enter Team Names</string>
+    <string name="default_team_a">FC Barcelona</string>
+    <string name="default_team_b">Real Madrid CF</string>
+    <string name="enter_button_text">Enter</string>
+    <string name="no_text" />
+    <string name="team_a_score">0</string>
+    <string name="team_b_name">Team B</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_score">0</string>
+    <string name="team_a_goal_btn">Goal</string>
+    <string name="time_display">00:00</string>
+    <string name="team_b_goal_btn">Goal</string>
+    <string name="team_a_shot_txt">0</string>
+    <string name="shots_txt">Shots</string>
+    <string name="team_b_shots_txt">0</string>
+    <string name="team_a_target_txt">0</string>
+    <string name="on_target_txt">On Target</string>
+    <string name="team_b_target_txt">0</string>
+    <string name="team_a_acc_txt">0%</string>
+    <string name="shot_accuracy_txt">Accuracy</string>
+    <string name="team_b_acc_txt">0%</string>
+    <string name="team_a_corner">0</string>
+    <string name="corners_txt">Corners</string>
+    <string name="team_b_corner">0</string>
+    <string name="reset_txt">Reset</string>
+    <string name="summary_title_txt">Match Summary</string>
+    <string name="summary_txt" />
+</resources>

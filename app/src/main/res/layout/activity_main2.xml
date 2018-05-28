@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.futbolcounter.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/small_one">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Name Display-->
+            <TextView
+                android:id="@+id/team_A_text"
+                style="@style/TxtHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_name" />
+
+            <!--Team B Name Display-->
+            <TextView
+                android:id="@+id/team_B_text"
+                style="@style/TxtHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Score-->
+            <TextView
+                android:id="@+id/team_A_score"
+                style="@style/TxtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/team_a_score" />
+
+            <!--Team B Score-->
+            <TextView
+                android:id="@+id/team_B_score"
+                style="@style/TxtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/team_b_score" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Goal Button
+            Regular press to increment goal
+            Long press to decrement goal-->
+            <Button
+                android:id="@+id/team_A_goal"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_goal_btn" />
+
+            <!--Game Timer Button
+            Regular press to start/stop timer
+            Long press to jump timer to begin second half-->
+            <Button
+                android:id="@+id/timer_button"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/large_one"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/time_display" />
+
+            <!--Team B Goal Button
+            Regular press to increment goal
+            Long press to decrement goal-->
+            <Button
+                android:id="@+id/team_B_goal"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_goal_btn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Shots Button
+            Regular press to increment shot
+            Long press to decrement shot-->
+            <Button
+                android:id="@+id/team_A_shot"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_shot_txt" />
+
+            <!--Shots label Text-->
+            <TextView
+                android:id="@+id/shot_text"
+                style="@style/txtPrimary"
+                android:layout_width="@dimen/txt_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/shots_txt" />
+
+            <!--Team A Shot Button
+            Regular press to increment shot
+            Long press to decrement shot-->
+            <Button
+                android:id="@+id/team_B_shot"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_shots_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Shots on Target Button
+            Regular press to increment shot on target
+            Long press to decrement shot on target-->
+            <Button
+                android:id="@+id/team_A_shotTarget"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_target_txt" />
+
+            <!--Shots on Target Label Text-->
+            <TextView
+                android:id="@+id/shotTarget_text"
+                style="@style/txtPrimary"
+                android:layout_width="@dimen/txt_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/on_target_txt" />
+
+            <!--Team A Shots on Target Button
+            Regular press to increment shots
+            Long press to decrement shots-->
+            <Button
+                android:id="@+id/team_B_shotTarget"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_target_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!--Team A Accuracy Button
+            Updated dynamically with goal, shots, and shots on target buttons-->
+            <Button
+                android:id="@+id/team_A_shotAccuracy"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_acc_txt" />
+
+            <!--Accuracy Label Text-->
+            <TextView
+                android:id="@+id/shotAccuracy_text"
+                style="@style/txtPrimary"
+                android:layout_width="@dimen/txt_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/shot_accuracy_txt" />
+
+            <!--Team A Accuracy Button
+            Updates dynamically with goal, shots, and shots on target buttons-->
+            <Button
+                android:id="@+id/team_B_shotAccuracy"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_acc_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Team A Corners Button
+            Regular press to increment corner
+            Long press to decrement corner-->
+            <Button
+                android:id="@+id/team_A_corner"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_a_corner" />
+
+            <!--Corners Label Text-->
+            <TextView
+                android:id="@+id/corners_text"
+                style="@style/txtPrimary"
+                android:layout_width="@dimen/txt_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/corners_txt" />
+
+            <!--Team A Corners Button
+            Regular press to increment corner
+            Long press to decrement corner-->
+            <Button
+                android:id="@+id/team_B_corner"
+                style="@style/buttonStyle"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/team_b_corner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Reset Button-->
+            <Button
+                android:id="@+id/reset_button"
+                style="@style/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--Display Match Summary Text-->
+            <TextView
+                android:id="@+id/summaryTitle_text"
+                style="@style/TxtHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_title_txt" />
+
+            <!--Display Game Goal Summary-->
+            <TextView
+                android:id="@+id/summary_text"
+                style="@style/txtPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_txt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
